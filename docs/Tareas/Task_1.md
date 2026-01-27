@@ -1,6 +1,6 @@
 [Home](../index.md)
 
-# Activity_1: Examples of robots by morphology
+# Activity 1: Examples of robots by morphology
 
 ## Objective:
 Investigate and show examples of real life examples of robots with different morphologies.
@@ -15,7 +15,7 @@ Investigate and show examples of real life examples of robots with different mor
 - No primary rotational joints.
 - Simple kinematics, high rigidity, and high positional accuracy.
 
-    <img src="../../docs/recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
+    <img src="../recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
 
 **Typical applications**
 
