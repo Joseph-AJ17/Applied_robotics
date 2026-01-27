@@ -1,14 +1,14 @@
-# Documentación del Proyecto
+# Joseph's applied robotics documentation
 
-Bienvenido 👋  
-Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) para cursos y proyectos.
+Bom Dia!👋
+
+Here I'll be uploading the tasks of the class and the progress of the final project.
 
 ---
 
-## Empezar rápido (3 pasos)
+## Tasks
 
-1. **Edita el nombre del sitio** en `mkdocs.yml`:
-   ```yaml
-   site_name: Documentación del Curso
-   theme:
-     name: material
+[1.- Examples of robots by morphology](Tareas/Task_1.md)
+
+---
+## Final project
