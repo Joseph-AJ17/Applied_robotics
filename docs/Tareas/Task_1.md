@@ -100,7 +100,7 @@ Combines:
 
 - Cincinnati Milacron T3 Robot
 
-    <img src="../recursos/imgs/Task_1/Cincinnati_Milacron_T3_Robot.png" alt="Polar Spherical Robots Midwest Engineered Systems" width="300" allign=center>
+    <img src="../recursos/imgs/Task_1/Cincinnati_Milacron_T3_Robot.png" alt="Cincinnati Milacron T3 Robot" width="300" allign=center>
 
 ---
 
@@ -136,7 +136,7 @@ Act almost like if it was a human arm.
 
 - FANUC M-20iA 20M
 
-    <img src="../recursos/imgs/Task_1/si.jpg" alt="KUKA KR 210" width="300" allign=center>
+    <img src="../recursos/imgs/Task_1/si.jpg" alt="FANUC M-20iA 20M" width="300" allign=center>
 
 ---
 
@@ -158,7 +158,7 @@ Motion configuration:
 
 **Typical applications**
 
-- High-speed assembly.
+- High-speed assemblies.
 
 - Electronics manufacturing.
 
