@@ -1,6 +1,6 @@
 [Home](../index.md)
 
-# Activity 1: Examples of robots by morphology
+# Activity_1: Examples of robots by morphology
 
 ## Objective:
 Investigate and show examples of real life examples of robots with different morphologies.
