@@ -17,7 +17,7 @@ Investigate and show examples of real life examples of robots with different mor
 
 <img src="../recursos/imgs/ibero.jpeg" alt=" Cartesian Robot" width="300" allign=center>
 
-<img src="../recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
+<img src="../../docs/recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
 
 ../recursos/imgs/ibero.jpeg
 
