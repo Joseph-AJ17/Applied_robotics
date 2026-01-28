@@ -9,7 +9,7 @@ Investigate and show examples of real life examples of robots with different mor
 
 ### 1.- Cartesian Robot (XYZ or Gantry)
 
-**Morphology and motion**
+**Morphology hola and motion**
 
 - Moves along three orthogonal linear axes (X, Y, Z).
 - No primary rotational joints.
@@ -17,7 +17,7 @@ Investigate and show examples of real life examples of robots with different mor
 
 <img src="../../docs/recursos/imgs/ibero.jpeg" alt=" ibero" width="300" allign=center>
 
-<img src="../docs/recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
+<img src="../recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
 
 ../recursos/imgs/ibero.jpeg
 
