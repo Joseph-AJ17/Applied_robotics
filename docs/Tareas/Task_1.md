@@ -15,7 +15,7 @@ Investigate and show examples of real life examples of robots with different mor
 - No primary rotational joints.
 - Simple kinematics, high rigidity, and high positional accuracy.
 
-<img src="../recursos/imgs/ibero.jpeg" alt=" Cartesian Robot" width="300" allign=center>
+<img src="../../docs/recursos/imgs/ibero.jpeg" alt=" Cartesian Robot" width="300" allign=center>
 
 <img src="../../docs/recursos/imgs/Task_1/Example_cartesian.png" alt=" Cartesian Robot" width="300" allign=center>
 
