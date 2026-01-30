@@ -147,20 +147,20 @@ This are the main steps for ros to work after we will use the command "__ros2 ru
 ```codigo
 ros2 run myrobot_pkg publisher
 ```
-<img src="../recursos/imgs/Task_3/c1.jpeg" alt="code 1" width="300" allign=center>
+<img src="../recursos/imgs/Task_3/c1.jpeg" alt="code 1" width="600" allign=center>
 
 We will see this on the terminal.
 
 We need to open a new terminal to see that the subscriber and the new publisher are working, we repeat the previus process to acces to our topic we just need to change the name of our node (my case subscriber)
 
-<img src="../recursos/imgs/Task_3/c2.jpeg" alt="code 2" width="300" allign=center>
+<img src="../recursos/imgs/Task_3/c2.jpeg" alt="code 2" width="600" allign=center>
 
 We can see that ir prints both messages we wanted. We can also open a third terminal to see the messages that is sending our new publisher with the new topic, repeating again the same steps except for the last one, for this will use "__topic echo__" to see the message of the new publisher called "spider_talker".
 
 ```codigo
 ros2 topic echo talk spidey_talk
 ```
-<img src="../recursos/imgs/Task_3/t3.jpeg" alt="third terminal" width="300" allign=center>
+<img src="../recursos/imgs/Task_3/t3.jpeg" alt="third terminal" width="600" allign=center>
 
 Finally we can see the graph of the communication flow by writing the next on a necessary third terminal,
 
@@ -170,8 +170,8 @@ rqt graph
 
 It'll automatically open a program to show the  graph asked on the objectives.
 
-<img src="../recursos/imgs/Task_3/graph.jpeg" alt="graph" width="300" allign=center>
+<img src="../recursos/imgs/Task_3/graph.jpeg" alt="graph" width="600" allign=center>
 
 Here are the four windows that shows all that was asked on the objectives.
 
-<img src="../recursos/imgs/Task_3/all.jpeg" alt="all working" width="300" allign=center>
+<img src="../recursos/imgs/Task_3/all.jpeg" alt="all working" width="600" allign=center>
