@@ -131,7 +131,752 @@ disp(T_0_N);
 
 ## 1st exercise
 
-Original problem image:
+### Original problem image:
 
+<img src="../recursos/imgs/Task_4/E1.png" alt="1st exercise" width="800" allign=center>
 
+### Result (planes, origins, axis, links):
 
+<img src="../recursos/imgs/Task_4/S1.png" alt="1st solution" width="800" allign=center>
+
+### Data table
+
+Tabla
+
+### Result (matrix arrays)
+
+```código
+
+% ===== Tabla DH (después de sustituir q) ===== 
+
+\[ 
+
+\textbf{Tabla DH (después de sustituir } q\textbf{)}= 
+
+\begin{array}{c c c c c} 
+
+a & \alpha & d & \theta & \text{type}\\ \hline 
+
+1 & -1.5708 & 0 & -1.5708 & \text{R}\\ 
+
+0 & 0       & 2 & 0       & \text{P} 
+
+\end{array} 
+
+\] 
+
+ 
+
+% ===== Matrices A_i ===== 
+
+\[ 
+
+A_1= 
+
+\begin{bmatrix} 
+
+0.0000  & 0.0000  & 1.0000 & 0.0000\\ 
+
+-1.0000 & 0.0000  & 0.0000 & -1.0000\\ 
+
+0       & -1.0000 & 0.0000 & 0\\ 
+
+0       & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_2= 
+
+\begin{bmatrix} 
+
+1 & 0 & 0 & 0\\ 
+
+0 & 1 & 0 & 0\\ 
+
+0 & 0 & 1 & 2\\ 
+
+0 & 0 & 0 & 1 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+% ===== T_0_N (pose final) ===== 
+
+\[ 
+
+T_{0N}= 
+
+\begin{bmatrix} 
+
+0.0000  & 0.0000  & 1.0000 & 2.0000\\ 
+
+-1.0000 & 0.0000  & 0.0000 & -1.0000\\ 
+
+0       & -1.0000 & 0.0000 & 0.0000\\ 
+
+0       & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+``` 
+
+## 2nd exercise
+
+### Original problem image:
+
+<img src="../recursos/imgs/Task_4/E2.png" alt="2nd exercise" width="800" allign=center>
+
+### Result (planes, origins, axis, links):
+
+<img src="../recursos/imgs/Task_4/S2.png" alt="2nd solution" width="800" allign=center>
+
+### Data table
+
+Tabla
+
+### Result (matrix arrays)
+
+```código
+
+% ===== Tabla DH (después de sustituir q) ===== 
+
+\[ 
+
+\textbf{Tabla DH (después de sustituir } q\textbf{)}= 
+
+\begin{array}{c c c c c} 
+
+a & \alpha & d & \theta & \text{type}\\ \hline 
+
+0 & 1.5708 & 1 & 1.5708 & \text{P}\\ 
+
+0 & 1.5708 & 1 & 1.5708 & \text{P}\\ 
+
+0 & 3.1416 & 1 & 0      & \text{P} 
+
+\end{array} 
+
+\] 
+
+ 
+
+% ===== Matrices A_i ===== 
+
+\[ 
+
+A_1= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0\\ 
+
+1.0000 & 0.0000  & -0.0000& 0\\ 
+
+0      & 1.0000  & 0.0000 & 1.0000\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_2= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0\\ 
+
+1.0000 & 0.0000  & -0.0000& 0\\ 
+
+0      & 1.0000  & 0.0000 & 1.0000\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_3= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & -1.0000& -0.0000& 0\\ 
+
+0      & 0.0000 & -1.0000& 1.0000\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+% ===== T_0_N (pose final) ===== 
+
+\[ 
+
+T_{0N}= 
+
+\begin{bmatrix} 
+
+-0.0000 & -1.0000 & -0.0000 & 1.0000\\ 
+
+0.0000  & 0.0000  & -1.0000 & 1.0000\\ 
+
+1.0000  & -0.0000 & 0.0000  & 1.0000\\ 
+
+0       & 0       & 0       & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+```
+
+## 3rd exercise
+
+### Original problem image:
+
+<img src="../recursos/imgs/Task_4/E3.png" alt="3rd exercise" width="800" allign=center>
+
+### Result (planes, origins, axis, links):
+
+<img src="../recursos/imgs/Task_4/S3.png" alt="3rd solution" width="800" allign=center>
+
+### Data table
+
+Tabla
+
+### Result (matrix arrays)
+
+```código
+
+% ===== Tabla DH (después de sustituir q) ===== 
+
+\[ 
+
+\textbf{Tabla DH (después de sustituir } q\textbf{)}= 
+
+\begin{array}{c c c c c} 
+
+a & \alpha & d & \theta & \text{type}\\ \hline 
+
+0 & -1.5708 & 1 & 0      & \text{R}\\ 
+
+1 & 0       & 0 & 0      & \text{R}\\ 
+
+0 & 1.5708  & 0 & 1.5708 & \text{R}\\ 
+
+0 & -1.5708 & 2 & 1.5708 & \text{R}\\ 
+
+0 & 1.5708  & 0 & 0      & \text{R}\\ 
+
+0 & 0       & 2 & 0      & \text{R} 
+
+\end{array} 
+
+\] 
+
+ 
+
+% ===== Matrices A_i ===== 
+
+\[ 
+
+A_1= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & 0.0000 & 1.0000 & 0\\ 
+
+0      & -1.0000& 0.0000 & 1.0000\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_2= 
+
+\begin{bmatrix} 
+
+1 & 0 & 0 & 1\\ 
+
+0 & 1 & 0 & 0\\ 
+
+0 & 0 & 1 & 0\\ 
+
+0 & 0 & 0 & 1 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_3= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0\\ 
+
+1.0000 & 0.0000  & -0.0000& 0\\ 
+
+0      & 1.0000  & 0.0000 & 0\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_4= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & -1.0000 & 0\\ 
+
+1.0000 & 0.0000  & 0.0000  & 0\\ 
+
+0      & -1.0000 & 0.0000  & 2.0000\\ 
+
+0      & 0       & 0       & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_5= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0       & 0\\ 
+
+0      & 0.0000 & -1.0000 & 0\\ 
+
+0      & 1.0000 & 0.0000  & 0\\ 
+
+0      & 0      & 0       & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_6= 
+
+\begin{bmatrix} 
+
+1 & 0 & 0 & 0\\ 
+
+0 & 1 & 0 & 0\\ 
+
+0 & 0 & 1 & 2\\ 
+
+0 & 0 & 0 & 1 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+% ===== T_0_N (pose final) ===== 
+
+\[ 
+
+T_{0N}= 
+
+\begin{bmatrix} 
+
+-0.0000 & -0.0000 & 1.0000 & 5.0000\\ 
+
+1.0000  & 0       & 0.0000 & 0.0000\\ 
+
+0       & 1.0000  & 0.0000 & 1.0000\\ 
+
+0       & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+```
+
+## 4th exercise
+
+### Original problem image:
+
+<img src="../recursos/imgs/Task_4/E4.png" alt="4th exercise" width="800" allign=center>
+
+### Result (planes, origins, axis, links):
+
+<img src="../recursos/imgs/Task_4/S4.png" alt="4th solution" width="800" allign=center>
+
+### Data table
+
+Tabla
+
+### Result (matrix arrays)
+
+```código
+
+% ===== Tabla DH (después de sustituir q) ===== 
+
+\[ 
+
+\textbf{Tabla DH (después de sustituir } q\textbf{)}= 
+
+\begin{array}{c c c c c} 
+
+a & \alpha & d & \theta & \text{type}\\ \hline 
+
+0 & -1.5708 & 1  & 0       & \text{R}\\ 
+
+1 & 0       & 0  & 0       & \text{R}\\ 
+
+0 & 1.5708  & -1 & 1.5708  & \text{R}\\ 
+
+0 & -1.5708 & 1  & 0       & \text{R}\\ 
+
+0 & 1.5708  & 0  & -1.5708 & \text{R}\\ 
+
+0 & 0       & 1  & 0       & \text{R} 
+
+\end{array} 
+
+\] 
+
+ 
+
+% ===== Matrices A_i ===== 
+
+\[ 
+
+A_1= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & 0.0000 & 1.0000 & 0\\ 
+
+0      & -1.0000& 0.0000 & 1.0000\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_2= 
+
+\begin{bmatrix} 
+
+1 & 0 & 0 & 1\\ 
+
+0 & 1 & 0 & 0\\ 
+
+0 & 0 & 1 & 0\\ 
+
+0 & 0 & 0 & 1 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_3= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0\\ 
+
+1.0000 & 0.0000  & -0.0000& 0\\ 
+
+0      & 1.0000  & 0.0000 & -1.0000\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_4= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & 0.0000 & 1.0000 & 0\\ 
+
+0      & -1.0000& 0.0000 & 1.0000\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_5= 
+
+\begin{bmatrix} 
+
+0.0000  & 0.0000 & -1.0000 & 0\\ 
+
+-1.0000 & 0.0000 & -0.0000 & 0\\ 
+
+0       & 1.0000 & 0.0000  & 0\\ 
+
+0       & 0      & 0       & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_6= 
+
+\begin{bmatrix} 
+
+1 & 0 & 0 & 0\\ 
+
+0 & 1 & 0 & 0\\ 
+
+0 & 0 & 1 & 1\\ 
+
+0 & 0 & 0 & 1 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+% ===== T_0_N (pose final) ===== 
+
+\[ 
+
+T_{0N}= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 2.0000\\ 
+
+0.0000 & 1.0000 & 0      & -1.0000\\ 
+
+0      & 0      & 1.0000 & 2.0000\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+```
+
+## 5th exercise
+
+### Original problem image:
+
+<img src="../recursos/imgs/Task_4/E5.png" alt="5th exercise" width="800" allign=center>
+
+### Result (planes, origins, axis, links):
+
+<img src="../recursos/imgs/Task_4/S5.png" alt="5th solution" width="800" allign=center>
+
+### Data table
+
+Tabla
+
+### Result (matrix arrays)
+
+```código
+
+% ===== Tabla DH (después de sustituir q) ===== 
+
+\[ 
+
+\textbf{Tabla DH (después de sustituir } q\textbf{)}= 
+
+\begin{array}{c c c c c} 
+
+a & \alpha & d & \theta & \text{type}\\ \hline 
+
+0 & 1.5708  & 0 & 1.5708  & \text{R}\\ 
+
+1 & 1.5708  & 0 & 1.5708  & \text{R}\\ 
+
+0 & -1.5708 & 0 & 0       & \text{R}\\ 
+
+0 & 1.5708  & 1 & 0       & \text{R}\\ 
+
+0 & -1.5708 & 0 & 0       & \text{R}\\ 
+
+0 & 0       & 1 & -1.5708 & \text{R} 
+
+\end{array} 
+
+\] 
+
+ 
+
+% ===== Matrices A_i ===== 
+
+\[ 
+
+A_1= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0\\ 
+
+1.0000 & 0.0000  & -0.0000& 0\\ 
+
+0      & 1.0000  & 0.0000 & 0\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_2= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 0.0000\\ 
+
+1.0000 & 0.0000  & -0.0000& 1.0000\\ 
+
+0      & 1.0000  & 0.0000 & 0\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_3= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & 0.0000 & 1.0000 & 0\\ 
+
+0      & -1.0000& 0.0000 & 0\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_4= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0       & 0\\ 
+
+0      & 0.0000 & -1.0000 & 0\\ 
+
+0      & 1.0000 & 0.0000  & 1.0000\\ 
+
+0      & 0      & 0       & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+\[ 
+
+A_5= 
+
+\begin{bmatrix} 
+
+1.0000 & 0      & 0      & 0\\ 
+
+0      & 0.0000 & 1.0000 & 0\\ 
+
+0      & -1.0000& 0.0000 & 0\\ 
+
+0      & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\qquad 
+
+A_6= 
+
+\begin{bmatrix} 
+
+0.0000  & 1.0000 & 0      & 0\\ 
+
+-1.0000 & 0.0000 & 0      & 0\\ 
+
+0       & 0      & 1.0000 & 1.0000\\ 
+
+0       & 0      & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+ 
+
+% ===== T_0_N (pose final) ===== 
+
+\[ 
+
+T_{0N}= 
+
+\begin{bmatrix} 
+
+0.0000 & -0.0000 & 1.0000 & 2.0000\\ 
+
+1.0000 & 0       & -0.0000& -0.0000\\ 
+
+0      & 1.0000  & 0.0000 & 1.0000\\ 
+
+0      & 0       & 0      & 1.0000 
+
+\end{bmatrix} 
+
+\] 
+
+```
