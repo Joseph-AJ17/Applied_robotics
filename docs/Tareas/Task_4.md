@@ -127,7 +127,9 @@ disp("=== T_0_N (end-effector pose) ===");
 
 disp(T_0_N); 
 
-``` 
+```
+## Advise
+It is important to note that a link length of 1 was assumed for every link whenever its length could not be considered negligible. Additionally, the script was evaluated using the initial configuration, 𝑞=0. These assumptions were adopted to keep the focus strictly on the kinematic analysis of the robots and on the systematic generation of Denavit–Hartenberg transformation matrices.
 
 ## 1st exercise
 
