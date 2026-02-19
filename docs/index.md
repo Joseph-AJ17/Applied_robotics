@@ -20,5 +20,7 @@ Here I'll be uploading the tasks of the class and the progress of the final proj
 
 [6.- Forward Kinematics for KUKA AN UR ROBOT](Tareas/Task_6.md)
 
+[7.- ROS Custom Interfaces](Tareas/Task_7.md)
+
 ---
 ## Final project
