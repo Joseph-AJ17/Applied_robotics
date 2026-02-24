@@ -22,5 +22,7 @@ Here I'll be uploading the tasks of the class and the progress of the final proj
 
 [7.- ROS Custom Interfaces](Tareas/Task_7.md)
 
+[8.- ROS Basics Capstone](Tareas/Task_8.md)
+
 ---
 ## Final project
