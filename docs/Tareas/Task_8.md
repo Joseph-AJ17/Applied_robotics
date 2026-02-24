@@ -842,6 +842,6 @@ Now when we run first 2 nodes, the turtle sim terminal appears with new informat
 
 ![WIP](../recursos/imgs/Task_8/turtles_spawned.jpeg)
 
-This the reuslt while running the 4 terminals.
+This is the result while running the 4 terminals.
 
 ![WIP](../recursos/imgs/Task_8/turtles_result.jpeg)
