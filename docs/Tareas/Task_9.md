@@ -151,7 +151,7 @@ Finnaly we will configure the movement of the tool. The movements noeeds to be i
 <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
 ```
 
-#### 3.5.- Launche the program and the code
+#### 3.5.- Launch the program and the code
 
 For the last part we will open our ubuntu terminal and after acces to our workspace we wll write:
 
@@ -161,7 +161,7 @@ ros2 launch urdf_tutorial display.launch.py model:=$HOME/your_workspace/src/your
 
 with this the code that we will creat and RVIZ will be running at the same time
 
-![WIP](../recursos/imgs/Task_9/launch.jpeg)
+![WIP](../recursos/imgs/Task_9/running_both.jpeg)
 
 ## Exercise 1
 
