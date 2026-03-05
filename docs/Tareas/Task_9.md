@@ -292,11 +292,150 @@ with this the code that we will creat and RVIZ will be running at the same time
 ### Code
 
 ```xml
+<?xml version="1.0"?>
+<robot name="my_robot">
 
+  <material name="table">
+    <color rgba="0.5098 0.3882 0.1294 1"/>
+  </material>
+
+  <material name="link_A">
+    <color rgba="0.160 0.360 0.420 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="10 10 0.2"/>
+      </geometry>
+      <material name="table"/>
+    </visual>
+  </link>
+
+  <link name="b0">
+    <visual>
+      <origin xyz="0 0 -0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.85"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <link name="link0">
+    <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.15"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <joint name="jb0" type="fixed">
+    <parent link="base_link"/>
+    <child link="b0"/>
+    <origin xyz="0 0 5" rpy="-1.57 0 0"/>
+  </joint>
+
+  <joint name="joint0" type="prismatic">
+    <parent link="base_link"/>
+    <child link="link0"/>
+    <origin xyz="0 0 5" rpy="-1.57 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0" upper="2" effort="100" velocity="100"/>
+  </joint>
+
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.15"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <link name="b1">
+    <visual>
+      <origin xyz="0 0 -0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.85"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <joint name="jb1" type="fixed">
+    <parent link="link0"/>
+    <child link="b1"/>
+    <origin xyz="0 0 3" rpy="1.57 0 1.57"/>
+  </joint>
+
+  <joint name="joint1" type="prismatic">
+    <parent link="link0"/>
+    <child link="link1"/>
+    <origin xyz="0 0 3" rpy="1.57 0 1.57"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0" upper="2" effort="100" velocity="100"/>
+  </joint>
+
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.15"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <link name="b2">
+    <visual>
+      <origin xyz="0 0 -0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 0.85"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <joint name="jb2" type="fixed">
+    <parent link="link1"/>
+    <child link="b2"/>
+    <origin xyz="0 0 3" rpy="1.57 0 1.57"/>
+  </joint>
+
+  <joint name="joint2" type="prismatic">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 3" rpy="1.57 0 1.57"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0" upper="2" effort="100" velocity="100"/>
+  </joint>
+
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.25"/>
+      </geometry>
+      <material name="link_A"/>
+    </visual>
+  </link>
+
+  <joint name="joint3" type="fixed">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 1" rpy="3.14 0 0"/>
+  </joint>
+
+</robot>
 ```
 
 ### Result
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/exercise2.jpeg)
 
 ## Exercise 3
 
