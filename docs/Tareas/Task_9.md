@@ -797,8 +797,191 @@ with this the code that we will creat and RVIZ will be running at the same time
 ### Code
 
 ```xml
+<?xml version="1.0"?>
 
+<robot name="my_robot">
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    <material name="gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.5" radius=".8"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="gray"/>
+        </visual>
+    </link>
+
+    <link name="link1">
+        <visual>
+            <geometry>
+                <cylinder length="0.5" radius="0.5"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0.5" rpy="0 0 0 "/>
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.5" upper="2.5" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link2">
+        <visual>
+            <geometry>
+                <cylinder length="1.5" radius="0.125"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 1.57 0"/>
+            <material name="blue"/>
+        </visual>
+
+        <visual>
+            <geometry>
+                <box size="0.5 1.1  0.5"/>
+            </geometry>
+            <origin xyz="0 0.8 0" rpy="0 1.57 0"/>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <origin xyz="0 0 0" rpy="1.57 0 1.57"/>
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-0.785" upper="0.785" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link3">
+        <visual>
+            <geometry>
+                <box size="0.3 0.3 1"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+            <material name="gray"/>
+        </visual>
+        <visual>
+            <geometry>
+                <cylinder length="0.5" radius="0.1"/>
+            </geometry>
+            <origin xyz="0 -0.3 0" rpy="0 0 0"/>
+        </visual>
+    </link>
+
+    <joint name="joint3" type="revolute">
+        <origin xyz="0 1.5 0" rpy="1.57 0 1.57 "/>
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.785" upper="0.785" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link4">
+    </link>
+
+    <joint name="joint4" type="fixed">
+        <origin xyz="0 0 0" rpy="1.57 0 0"/>
+        <parent link="link3"/>
+        <child link="link4"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+
+        <link name="link5">
+        <visual>
+            <geometry>
+                <cylinder length="1" radius="0.125"/>
+            </geometry>
+            <origin xyz="0 0 1" rpy="0 0 0"/>
+            <material name="gray"/>
+        </visual>
+    </link>
+
+    <joint name="joint5" type="revolute">
+        <origin xyz="0 0 0" rpy="3.14 0 1.57"/>
+        <parent link="link4"/>
+        <child link="link5"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link6">
+    </link>
+
+    <joint name="joint6" type="fixed">
+        <origin xyz="0 0 1.5" rpy="-1.57 0 -1.57"/>
+        <parent link="link5"/>
+        <child link="link6"/>
+        <axis xyz="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link7">
+        <visual>
+            <geometry>
+                <box size="0.3 0.3 0.3"/>
+            </geometry>
+            <origin xyz="0 0.15 0" rpy="0 0 0"/>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <joint name="joint7" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 3.14"/>
+        <parent link="link6"/>
+        <child link="link7"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.785" upper="0.785" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link8">
+        <visual>
+            <geometry>
+                <cylinder length="0.1" radius="0.125"/>
+            </geometry>
+            <origin xyz="0 0 0.3" rpy="0 0 1.57 "/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <joint name="joint8" type="revolute">
+        <origin xyz="0 0 0" rpy="-1.57 0 0"/>
+        <parent link="link7"/>
+        <child link="link8"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="100"/>
+    </joint>
+
+    <link name="link9">
+    </link>
+
+    <joint name="joint9" type="fixed">
+        <origin xyz="0 0 .35" rpy="0 0 0"/>
+        <parent link="link8"/>
+        <child link="link9"/>
+        <axis xyz="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="100"/>
+    </joint>
+
+</robot>
 ```
 
 ### Result
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/exercise5.jpeg)
