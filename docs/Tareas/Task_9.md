@@ -174,7 +174,7 @@ with this the code that we will creat and RVIZ will be running at the same time
 
 ---
 
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/S1.png)
 
 ### Code
 
@@ -287,7 +287,7 @@ with this the code that we will creat and RVIZ will be running at the same time
 
 ---
 
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/S2.png)
 
 ### Code
 
@@ -452,7 +452,7 @@ with this the code that we will creat and RVIZ will be running at the same time
 
 ---
 
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/S3.png)
 
 ### Code
 
@@ -603,7 +603,7 @@ with this the code that we will creat and RVIZ will be running at the same time
 
 ---
 
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/S4.png)
 
 ### Code
 
@@ -792,7 +792,7 @@ with this the code that we will creat and RVIZ will be running at the same time
 ---
 
 
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/S5.png)
 
 ### Code
 
