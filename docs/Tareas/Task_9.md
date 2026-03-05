@@ -457,11 +457,136 @@ with this the code that we will creat and RVIZ will be running at the same time
 ### Code
 
 ```xml
+<?xml version="1.0"?>
+<robot name="my_robot">
 
+    <material name="blue"> <color rgba="0 0 1 1"/> </material>
+    <material name="gray"> <color rgba="0.5 0.5 0.5 1"/> </material>
+    <material name="red"> <color rgba="1 0 0 1"/> </material>
+    <material name="black"> <color rgba="0 0 0 1"/> </material>
+    <material name="white_spidey"> <color rgba="1 1 1 0.2"/> </material>
+
+    <link name="base_link">
+        <visual>
+            <geometry> <box size="0.2 0.2 0.2"/> </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <link name="link_base">
+        <visual>
+            <geometry> <cylinder radius="0.05" length="1.0"/> </geometry>
+            <origin xyz="0 0 0.5" rpy="0 0 0"/>
+            <material name="gray"/>
+        </visual>
+    </link>
+
+    <joint name="jointfixed" type="fixed">
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="link_base"/>
+    </joint>
+
+    <link name="link1">
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="link_base"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link2">
+        <visual>
+            <geometry> <cylinder radius="0.04" length="1.0"/> </geometry>
+            <origin xyz="0.5 0 0" rpy="0 1.57 0"/>
+            <material name="white_spidey"/>
+        </visual>
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <origin xyz="0 0 1" rpy="-1.57 0 0"/>
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link3">
+    </link>
+
+    <joint name="joint3" type="revolute">
+        <origin xyz="1 0 0" rpy="0 0 0"/>
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link4">
+        <visual>
+            <geometry> <cylinder radius="0.04" length="2.0"/> </geometry>
+            <origin xyz="0 0 1.0" rpy="0 0 0"/>
+            <material name="white_spidey"/>
+        </visual>
+    </link>
+
+    <joint name="joint4" type="revolute">
+        <origin xyz="0 0 0" rpy="1.57 0 1.57"/>
+        <parent link="link3"/>
+        <child link="link4"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link5">
+    </link>
+
+    <joint name="joint5" type="revolute">
+        <origin xyz="0 0 2" rpy="-1.57 0 1.57"/>
+        <parent link="link4"/>
+        <child link="link5"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link6">
+        <visual>
+            <geometry> <cylinder radius="0.03" length="2.0"/> </geometry>
+            <origin xyz="0 0 1.0" rpy="0 0 0"/>
+            <material name="white_spidey"/>
+        </visual>
+    </link>
+
+    <joint name="joint6" type="revolute">
+        <origin xyz="0 0 0" rpy="1.57 0 0"/>
+        <parent link="link5"/>
+        <child link="link6"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    </joint>
+
+    <link name="link7">
+        <visual>
+            <geometry> <sphere radius="0.05"/> </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <joint name="joint7" type="fixed">
+        <origin xyz="0 0 2" rpy="0 0 0"/>
+        <parent link="link6"/>
+        <child link="link7"/>
+    </joint>
+
+</robot>
 ```
 
 ### Result
-![WIP](../recursos/imgs/Task_9/exercise1.jpeg)
+![WIP](../recursos/imgs/Task_9/exercise3.jpeg)
 
 ## Exercise 4
 
