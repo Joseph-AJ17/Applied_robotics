@@ -1,4 +1,4 @@
-# Inverse Kinematics and Jacobian
+# IK and jacobian
 
 ![robot image](recursos/imgs/homework7/IKJB.jpeg)
 
@@ -10,25 +10,55 @@ First, the geometric relationships used to obtain the inverse kinematics equatio
 
 ---
 
-## 2. Calculation of the Hypotenuse \(h_2\)
+## 2. Inverse Kinematics Equations, Lateral view (xz plane)
+
+For this analysis, the initial pose of the robot was adjusted to facilitate the determination of the corresponding joint angles. In this view, the inverse kinematic formulation is centered on \(q_2\) and \(q_3\), as these joint variables govern the geometric configuration of the manipulator in the \(x\)-\(z\) plane.
+
+![image](recursos/imgs/homework7/5.jpeg)
+
+The joint angle equations are obtained as functions of the target coordinates \((x, z)\).
+
+### 2.1 \(\theta_2\) and \(\theta_3\) definition
+
+
+$$
+\beta = \alpha + \theta_2
+\;\;\therefore\;\;
+\theta_2 = \beta - \alpha
+$$
+
+$$
+180^\circ = \phi + \theta_3
+\;\;\therefore\;\;
+\theta_3 = 180^\circ - \phi
+$$
+
+
+Therefore, the variables $\alpha$, $\beta$, and $\phi$, previously defined, must be known in advance in order to determine the inverse kinematics of $\theta_2$ and $\theta_3$.
+
+---
+
+### 2.2 Calculation of the intermediate variable \(h_z\)
 
 ![image](recursos/imgs/homework7/1.jpeg)
 
-From the geometric analysis of the manipulator, the following relationship for \(h_2\) is obtained:
+The variable \(h_z\) must be obtained first because it defines the side of the triangle formed in the \(x\)-\(z\) plane by the links \(a_2\), \(a_3\), and the target position. It is required to apply the law of cosines and compute the auxiliary angles \(\alpha\) and \(\phi\), which are then used to determine \(\theta_2\) and \(\theta_3\).
+
+From the geometric analysis of the manipulator, the following relationship for \(h_z\) is obtained:
 
 $$
-h_2^2 = x^2 + (z - a_1)^2
+h_z^2 = x^2 + (z - a_1)^2
 $$
 
-Thus, the magnitude of \(h_2\) is:
+Thus, the magnitude of \(h_z\) is:
 
 $$
-h_2 = \sqrt{x^2 + (z - a_1)^2}
+h_z = \sqrt{x^2 + (z - a_1)^2}
 $$
 
 ---
 
-## 3. Calculation of the Angle \(\beta\)
+### 2.3 Calculation of the Angle \(\beta\)
 
 ![image](recursos/imgs/homework7/2.jpeg)
 
@@ -40,75 +70,84 @@ $$
 
 ---
 
-## 4. Law of Cosines for \(\phi\)
+### 2.4 Law of Cosines for \(\phi\)
 
 ![image](recursos/imgs/homework7/3.jpeg)
 
 To determine the internal angle \(\phi\) of the triangle formed by the robot links, the law of cosines is applied:
 
 $$
-h_2^2 = a_2^2 + a_3^2 - 2a_2 a_3 \cos(\phi)
+h_z^2 = a_2^2 + a_3^2 - 2a_2 a_3 \cos(\phi)
 $$
 
 Solving for \(\phi\), the following expression is obtained:
 
 $$
-\phi = \cos^{-1} \left( \frac{-h_2^2 + a_2^2 + a_3^2}{2 a_2 a_3} \right)
+\phi = \cos^{-1} \left( \frac{-h_z^2 + a_2^2 + a_3^2}{2 a_2 a_3} \right)
 $$
 
 ---
 
-## 5. Calculation of the Angle \(\alpha\)
+### 2.5 Calculation of the Angle \(\alpha\)
 
 ![image](recursos/imgs/homework7/4.jpeg)
 
 Applying the law of cosines again to the robot arm triangle, the following relationship for side \(a_3\) is obtained:
 
 $$
-a_3^2 = a_2^2 + h_2^2 - 2a_2 h_2 \cos(\alpha)
+a_3^2 = a_2^2 + h_z^2 - 2a_2 h_z \cos(\alpha)
 $$
 
 The angle \(\alpha\) is then computed as:
 
 $$
-\alpha = \cos^{-1} \left( \frac{-a_3^2 + a_2^2 + h_2^2}{2 a_2 h_2} \right)
+\alpha = \cos^{-1} \left( \frac{-a_3^2 + a_2^2 + h_z^2}{2 a_2 h_z} \right)
 $$
 
 ---
 
-## 6. Inverse Kinematics Equations
+## 3. Inverse Kinematics Equations, Top view (xy plane)
 
-![image](recursos/imgs/homework7/5.jpeg)
+For this analysis, the initial pose of the robot was adjusted to facilitate the determination of the corresponding joint angles. In this view, the inverse kinematic formulation is centered on \(q_1\), as these joint variables govern the geometric configuration of the manipulator in the \(x\)-\(y\) plane.
 
-By combining the geometric and trigonometric relationships, the joint angle equations are obtained as functions of the target coordinates \((x, z)\).
 
-### 6.1 Intermediate Variable
+![image](recursos/imgs/homework7/6.jpeg)
 
-First, the hypotenuse \(h_2\) is defined as:
+From the geometric relationship between the Cartesian coordinates \((x,y)\) and the projected radial distance, \(\theta_1\) is obtained as
 
 $$
-h_2 = \sqrt{x^2 + (z - a_1)^2}
+\theta_1 = \tan^{-1}\left(\frac{y}{x}\right)
 $$
 
-### 6.2 Joint Angle Equations
+
+---
+
+## Joint Angle Equations
+
+For the angle \(\theta_1\):
+
+$$
+\theta_1 = \tan^{-1}\left(\frac{y}{x}\right)
+$$
 
 For the angle \(\theta_2\):
 
 $$
-\theta_2 = \tan^{-1} \left( \frac{z - a_1}{x} \right) - \cos^{-1} \left( \frac{-a_3^2 + a_2^2 + h_2^2}{2 a_2 h_2} \right)
+\theta_2 = \tan^{-1} \left( \frac{z - a_1}{x} \right) - \cos^{-1} \left( \frac{-a_3^2 + a_2^2 + h_z^2}{2 a_2 h_z} \right)
 $$
 
 For the angle \(\theta_3\):
 
 $$
-\theta_3 = 180^\circ - \cos^{-1} \left( \frac{-h_2^2 + a_2^2 + a_3^2}{2 a_2 a_3} \right)
+\theta_3 = 180^\circ - \cos^{-1} \left( \frac{-h_z^2 + a_2^2 + a_3^2}{2 a_2 a_3} \right)
 $$
+
 
 ---
 
-## 7. Abbreviated Notation
+## 4. Determination of the Robot Jacobian
 
-![image](recursos/imgs/homework7/6.jpeg)
+### 4.1 Notes
 
 To simplify the trigonometric expressions used in the matrices and in the Jacobian, the following notation is adopted:
 
@@ -120,15 +159,7 @@ $$
 s_1 = \sin(q_1), \qquad s_2 = \sin(q_2), \qquad s_3 = \sin(q_3)
 $$
 
-Likewise, for combined angles:
-
-$$
-c_{23} = \cos(q_2+q_3), \qquad s_{23} = \sin(q_2+q_3)
-$$
-
----
-
-## 8. Homogeneous Matrix Multiplication \(\left(T_0^1 \cdot T_1^2\right)\)
+### 4.2 Homogeneous Matrix Multiplication (End effector)
 
 The product corresponding to the homogeneous transformation matrices of the first two links is:
 
@@ -149,9 +180,6 @@ T_0^1 \cdot T_1^2 =
 \end{pmatrix}
 $$
 
----
-
-## 9. Resulting Matrix \(\left(T_0^2\right)\)
 
 The resulting matrix from the product \(T_0^1 \cdot T_1^2\) is:
 
@@ -164,24 +192,6 @@ T_0^2 =
 0 & 0 & 0 & 1
 \end{pmatrix}
 $$
-
-The position terms of this transformation are:
-
-$$
-x = a_2 \cos(q_1)\cos(q_2)
-$$
-
-$$
-y = a_2 \sin(q_1)\cos(q_2)
-$$
-
-$$
-z = -a_2 \sin(q_2) + a_1
-$$
-
----
-
-## 10. Homogeneous Matrix Multiplication \(\left(T_0^2 \cdot T_2^3\right)\)
 
 The intermediate matrix \(T_0^2\) is multiplied by the transformation matrix \(T_2^3\):
 
@@ -202,10 +212,6 @@ T_0^2 T_2^3 =
 \end{bmatrix}
 $$
 
----
-
-## 11. Resulting Homogeneous Transformation Matrix \(T_0^3\)
-
 The resulting matrix, which represents the position and orientation of the end-effector with respect to the base frame, is:
 
 $$
@@ -217,24 +223,6 @@ T_0^3 =
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-
-The position vector contained in the fourth column is:
-
-$$
-P_x = \cos(q_1)(a_3\cos(q_2+q_3) + a_2\cos(q_2))
-$$
-
-$$
-P_y = \sin(q_1)(a_3\cos(q_2+q_3) + a_2\cos(q_2))
-$$
-
-$$
-P_z = -a_3\sin(q_2+q_3) - a_2\sin(q_2) + a_1
-$$
-
----
-
-## 12. End-Effector Position Vector
 
 From the last column of matrix \(T_0^3\), the position vector of the end-effector is obtained as:
 
@@ -249,7 +237,7 @@ $$
 
 ---
 
-## 13. Partial Derivatives for the Linear Jacobian
+## Jacobian Matrix
 
 Differentiating the position vector with respect to the joint variables \(q_1\), \(q_2\), and \(q_3\), the linear Jacobian \(J_v\) is obtained:
 
