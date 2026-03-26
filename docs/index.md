@@ -28,5 +28,7 @@ Here I'll be uploading the tasks of the class and the progress of the final proj
 
 [10.- Inverse Kinematics and Jacobian](Tareas/Task_10.md)
 
+[11.- Trajectory Exercises](Tareas/Task_11.md)
+
 ---
 ## Final project
